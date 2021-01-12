@@ -1,0 +1,15 @@
+th,
+td {
+  border: 1px solid;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  width: 1000px;
+}
+.remark {
+  background-color: rgb(195, 150, 240);
+}
+.terms {
+  text-align: right;
+}
