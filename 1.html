@@ -46,8 +46,8 @@
                     <input type="date" name="birthday" max=2020-12-31 min=1950-01-01 required></br> <!--required는 값이 없을경우 오류-->
                     
                     <label for="email">이메일: </label>
-                    <input type="text" name="email" id="email" size="20" 
-                    pattern="^[a-zA-Z0-9]*$" required> 
+                    <input type="text" name="email" id="email" size="30" 
+                    pattern="[0-9a-zA-Z._%+-]+(@[0-9a-zA-Z]+.[.a-zA-Z]{3,5})?" required> 
                     <select name="email" required>
                         <option value="" selected>선택하세요</option>
                         <option value="naver.com" >naver.com</option>
@@ -84,7 +84,7 @@
                     </select>
                     <span>-</span>
                     <input type="text" id="selfphone" name="selfphone" size="4"
-                    pattern="^[0-9]{4}$" required>
+                    pattern="^[0-9]{3,4}$" required>
                     <span>-</span>
                     <input type="text" id="selfphone" name="selfphone" size="4"  
                     pattern="^[0-9]{4}$" required></br>
@@ -137,7 +137,7 @@
                 ⑤ 해지 : 사이트 또는 회원이 서비스 이용계약을 취소하는 것을 말합니다.
                 </div>
                 <p class="terms">
-                    <input type="checkbox" id="terms" name="terms" value="agree"><strong>위 약관에 동의합니다.</strong>
+                    <input type="checkbox" id="terms" name="terms" value="agree" required><strong>위 약관에 동의합니다.</strong>
                 </p>
                 <div style="overflow: auto; width: 100%; height: 100px;">
                     제 2 장 서비스 이용계약
@@ -174,7 +174,7 @@
                 회원은 이용 신청시에 기재했던 회원정보가 변경되었을 경우에는, 온라인으로 수정하여야 하며 변경하지 않음으로 인하여 발생되는 모든 문제의 책임은 회원에게 있습니다.
                 </div>
                 <p class="terms">
-                    <input type="checkbox" name="terms" value="agree"><strong>위 약관에 동의합니다.</strong>
+                    <input type="checkbox" name="terms" value="agree" required><strong>위 약관에 동의합니다.</strong>
                 </p>
                 <div style="overflow: auto; width: 100%; height: 100px;">제 3 장 계약 당사자의 의무
 
@@ -257,7 +257,7 @@
                 서비스와 관련하여 사이트와 회원간에 분쟁이 발생할 경우 사이트의 본사 소재지를 관할하는 법원을 관할법원으로 합니다.
                 </div>
                 <p class="terms">
-                    <input type="checkbox" name="terms" value="agree"><strong>위 약관에 동의합니다.</strong></p>
+                    <input type="checkbox" name="terms" value="agree" required><strong>위 약관에 동의합니다.</strong></p>
                 <p>
                 <input type="image" src="회원가입.png" alt="회원가입버튼" title="회원가입" height="50">
         </form>
