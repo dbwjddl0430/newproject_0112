@@ -1,3 +1,9 @@
 #jointitle {
   text-align: center;
 }
+.terms {
+  text-align: right;
+}
+.clear {
+  clear: both;
+}
