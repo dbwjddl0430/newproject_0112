@@ -1,3 +1,85 @@
-<button>
-  <img src="C:\Users\dbwjd\Desktop\apache-tomcat-8.5.60\회원가입.png" />
-</button>
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <style>
+      body {
+        width: 500px;
+
+        margin: 0 auto;
+      }
+
+      .aside {
+        width: 300px;
+
+        float: left;
+      }
+
+      .section {
+        width: 200px;
+
+        float: right;
+      } /* 자식(aside, section)에 width와 float을 주고 clear: both입력*/
+
+      .clear {
+        clear: both;
+      }
+
+      /*또는 .container::after {
+        .clear를 따로 만들지 않음. 자식에 width와 float속성을 주고 밑에 3가지 모두 입력!!
+        clear: both;
+        content: " ";
+        display: block;
+      }*/
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Header</h1>
+    </div>
+    <div class="aside">
+      <h1>Aside</h1>
+
+      <p>
+        Velit ad esse deserunt mollit ea exercitation. Incididunt culpa esse
+        esse eu irure laboris labore cupidatat dolor commodo. Eiusmod ex ipsum
+        dolor consectetur laborum laboris pariatur id consequat excepteur
+        cupidatat consectetur amet. Ad veniam id nostrud reprehenderit.Occaecat
+        sunt veniam occaecat aliqua duis magna laboris.Quis aute duis id officia
+        Lorem cupidatat excepteur fugiat laboris adipisicing ad adipisicing
+        laboris.
+      </p>
+    </div>
+
+    <div class="section">
+      <h1>Section</h1>
+
+      <p>
+        Aute consectetur nostrud esse id fugiat eu veniam eiusmod labore dolor
+        deserunt eu nulla. Anim id aute exercitation amet pariatur non. Cillum
+        aute nisi amet id duis quis nulla cillum dolore officia sunt irure.
+        Voluptate aliquip voluptate nostrud ut proident consectetur aute
+        excepteur labore. Labore excepteur incididunt ut duis aliqua pariatur
+        non officia.
+      </p>
+    </div>
+
+    <div class="clear"></div>
+    /* 막을 만들어줌. float을 적용할 대상들(자식) 뒤에만 적어주면 된다.*/
+
+    <div class="footer">
+      <h1>Footer</h1>
+
+      <p>
+        Culpa culpa cillum pariatur amet sint labore deserunt ea eu.Dolor fugiat
+        labore aliqua officia cupidatat amet ea excepteur laboris do non
+        exercitation ex.Labore adipisicing tempor non id aliqua nulla et.Ex
+        voluptate excepteur et nostrud tempor aliquip aliquip duis veniam
+        voluptate.
+      </p>
+    </div>
+  </body>
+</html>
