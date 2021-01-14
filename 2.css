@@ -1,0 +1,33 @@
+/*테이블 요소*/
+th,
+td {
+  border: 1px solid;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  width: 1000px;
+}
+.remark {
+  background-color: rgb(241, 248, 182);
+}
+.terms {
+  text-align: right;
+}
+.content {
+  width: 75%;
+  float: right;
+}
+aside {
+  width: 20%;
+  float: left;
+  height: 1000px;
+  border-right: dashed 3px;
+}
+a {
+  color: rgb(54, 54, 158);
+  text-decoration: none;
+}
+.clear {
+  clear: both;
+}
