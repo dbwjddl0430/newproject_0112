@@ -3,13 +3,34 @@
   <head>
     <mata charset="UTF-8" />
     <title>회원가입</title>
-    <link rel="stylesheet" href="2.css" />
+    <link rel="stylesheet" href="1.css" />
+    <link rel="stylesheet" href="all.css" />
   </head>
   <body>
-        <form action="/text.html" accept-charset="utf-8" name="Required_information" method="get">
-            <h1 id="jointitle">회원가입</h1>
+    <header>
+      <h1 id="jointitle">회원가입</h1>
+    </header>
+    <nav>
+        <ul>
+          <li><a href="2.html">홈</a></li>
+          <li><a href="1.html">회원가입</a></li>
+          <li><a href="login.html">로그인</a></li>
+          <li>
+            <a
+              href="https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%A7%90%EB%85%84"
+              target="_blank"
+              >침착맨 위키백과로 이동</a
+            >
+          </li>
+          <!--외부링크-->
+          <li><a href="#Lee">이말년 사진으로 이동하기</a></li>
+          <!--내부링크-->
+        </ul>
+      </nav>
+        <main>
             <fieldset>
                 <legend>필수정보입력</legend>
+                <form action="text.html" accept-charset="utf-8" name="Required_information" method="get">
                     <label for="username">이름: </label> 
                     <input type="text" id="username" name="username" placeholder="이름을 입력하세요." 
                     pattern="^[가-힣a-zA-Z]{2,20}$" required/></br>
@@ -46,7 +67,7 @@
                     <input type="date" name="birthday" max=2020-12-31 min=1950-01-01 required></br> <!--required는 값이 없을경우 오류-->
                     
                     <label for="email">이메일: </label>
-                    <input type="text" name="email" id="email" size="30" 
+                    <input type="text" name="email" id="email" size="20" 
                     pattern="[0-9a-zA-Z._%+-]+(@[0-9a-zA-Z]+.[.a-zA-Z]{3,5})?" required> 
                     <select name="email" required>
                         <option value="" selected>선택하세요</option>
@@ -261,6 +282,8 @@
                 <p>
                 <input type="image" src="회원가입.png" alt="회원가입버튼" title="회원가입" height="50">
         </form>
+    </main>
+    <footer>개발자 이메일:dbwjddl0430@naver.com</footer>
     </body>
 </html>
 

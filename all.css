@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(212, 212, 212);
+}
+header,
+footer,
+main {
+  border: solid 1px white;
+  background-color: white;
+}
+header,
+footer {
+  text-align: center;
+}
+nav > ul {
+  list-style: none;
+  float: right;
+}
+nav > ul > li {
+  border: solid 1px white;
+  margin: 0px 5px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  float: left;
+}
+
+main,
+footer {
+  margin-bottom: 10px;
+  padding: 20px;
+  clear: both;
+}
+nav > ul > li > a {
+  color: red;
+  text-decoration: none;
+}
