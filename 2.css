@@ -52,8 +52,8 @@ section p:active {
   float: left;
   font-family: "Gentium Book Basic", serif;
 }
-/*article p:not(#first-p)::before,
+article p:not(#first-p)::before,
 section p::before {
   margin-left: 10px;
   content: "";
-}*/
+}
