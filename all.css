@@ -1,3 +1,4 @@
+/*레이아웃*/
 body {
   background-color: rgb(212, 212, 212);
 }
@@ -11,26 +12,59 @@ header,
 footer {
   text-align: center;
 }
-nav > ul {
-  list-style: none;
-  float: right;
-}
-nav > ul > li {
-  border: solid 1px white;
-  margin: 0px 5px;
-  padding: 5px;
-  background-color: white;
-  border-radius: 10px;
-  float: left;
-}
-
 main,
 footer {
   margin-bottom: 10px;
   padding: 20px;
   clear: both;
 }
-nav > ul > li > a {
-  color: black;
+/*nav*/
+nav > ul {
+  float: right;
+  border: solid 1px #ccc;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px rgb(182, 181, 181);
+}
+nav li {
+  padding: 5px;
+  border-radius: 10px;
+  float: left;
+}
+nav li:first-child {
+  margin-left: -30px;
+}
+
+nav li::after,
+footer span::after {
+  content: "|";
+  color: #ccc;
+  margin-left: 10px;
+}
+nav li:last-child::after,
+footer > span:last-child::after {
+  content: "";
+}
+ul {
+  list-style: none;
+}
+
+/*a*/
+a {
   text-decoration: none;
+}
+a:not(.footer) {
+  color: black;
+}
+a:not(.title):hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+} /*마우스 포인터 가져다 대면*/
+a:not(.title):active {
+  color: red;
+} /*클릭시*/
+footer,
+.title:active,
+.footer {
+  color: gray;
 }
