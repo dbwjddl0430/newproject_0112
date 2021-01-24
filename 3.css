@@ -1,0 +1,44 @@
+main {
+  width: 500px;
+  height: 600px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1000px;
+}
+#login {
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
+}
+#pwd {
+  margin-left: -55px;
+}
+input,
+button {
+  margin: 5px;
+}
+#auto {
+  margin-left: -200px;
+}
+#loginbutton {
+  border: solid rgb(185, 184, 184);
+  background-color: rgb(185, 184, 184);
+  font-size: 15px;
+  color: white;
+  margin-right: -20px;
+  width: 310px;
+  height: 50px;
+}
+.help {
+  color: rgb(177, 175, 175);
+  border-top: 1px solid;
+  margin: 10px;
+  padding: 10px;
+}
+.help span::after {
+  content: "|";
+  margin-left: 10px;
+}
+.help span:last-child::after {
+  content: "";
+}

@@ -68,3 +68,8 @@ footer,
 .footer {
   color: gray;
 }
+body {
+  font-family: "Yusei Magic", "Dotum", "돋움", "Apple SD Gothic Neo", sans-serif;
+  font-size: 20px;
+  line-height: 2;
+}

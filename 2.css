@@ -26,6 +26,7 @@ aside {
 .clear {
   clear: both;
 }
+/*목차*/
 aside[class] ul > li::before {
   content: "";
   display: inline-block;
@@ -43,17 +44,20 @@ aside ul > li + ol > li {
 article p:active,
 section p:active {
   background-color: #eee;
-} /*문단 색상*/
+}
 
-#first-p:first-of-type:first-letter {
+article dl p:nth-of-type(1)::first-letter {
   font-size: 3em;
   font-weight: bold;
-  color: green;
+  color: gray;
   float: left;
   font-family: "Gentium Book Basic", serif;
 }
-article p:not(#first-p)::before,
-section p::before {
-  margin-left: 10px;
-  content: "";
+article p:not(#first-p),
+section p,
+figure p {
+  text-indent: 20px;
+}
+p:not(#first-p):not(.aside p):not(figure p) {
+  text-shadow: 2px 4px 10px rgba(73, 128, 73, 0.452);
 }
